@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* style for toast which displays state of action taken */
+#toast {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+.toastsuccess {
+  background-color: #448e55;
+}
+
+.toasterror {
+  background-color: #e64455;
+}
+
+#list_container {
+  display: none;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Weather Forecast Application</title>
+</head>
+<body>
+    <header class="h-[60vh] bg-slate-900 rounded-br-[40px] rounded-bl-[40px] shadow-2xl flex">
+        <article class="w-[60vw] p-5 pl-10">
+            <section class="search_container flex mb-16">
+                <div class="mr-10">
+                    <input id="search" type="text" autocomplete="off" placeholder="Search city" class="border-0 bg-custom-light-gray h-10 rounded-lg w-96 h-11 pl-4 text-gray-300">
+                    <ul id="list_container"></ul>
+                </div>
+                <span class="border border-gray-400 has-[100%]:"></span>
+                <button id="current_location" class="ml-10 bg-custom-light-blue rounded-lg p-2 flex items-center"><img class="h-5 w-6 mr-1" src="../assets/Location.png" alt="location-icon">Current Location</button>
+            </section>
+            <section id="container">
+                <!-- <div class="flex text-white items-center">
+                    <p class="text-9xl">32</p> 
+                    <span class="text-5xl ml-1"><sup>°C</sup></span>
+                    <p class="text-end">Clouds</p>
+                </div>
+                <div>
+                    <p>Chandrapur</p>
+                    <p>date</p>
+                </div> -->
+            </section>
+        </article>
+        <article class="w-[40vw] p-5">
+            <section class="weather_icon"></section>
+            <section class="weather_states"></section>
+        </article>
+    </header>
+    <div id="five_days_Forecast">
+        <div class="forecast"></div>
+        <div class="forecast"></div>
+        <div class="forecast"></div>
+        <div class="forecast"></div>
+        <div class="forecast"></div>
+    </div>
+    <!-- dynamic toast -->
+    <div id="toast" class="toast"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
