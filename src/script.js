@@ -448,21 +448,21 @@ function weatherRender(weather, forecast) {
     let wetherForecastIcon;
 
     if (element.weather[0].main === "Clouds") {
-      wetherForecastIcon = "./assets/Cloud.png";
+      wetherForecastIcon = "../assets/Cloud.png";
     } else if (element.weather[0].main === "Clear") {
-      wetherForecastIcon = "./assets/Sun.png";
+      wetherForecastIcon = "../assets/Sun.png";
     } else if (element.weather[0].main === "Rain") {
-      wetherForecastIcon = "./assets/Light Rain.png";
+      wetherForecastIcon = "../assets/Light Rain.png";
     } else if (element.weather[0].main === "Fog") {
-      wetherForecastIcon = "./assets/Fog1.png";
+      wetherForecastIcon = "../assets/Fog1.png";
     } else if (element.weather[0].main === "Snow") {
-      wetherForecastIcon = "./assets/Snow.png";
+      wetherForecastIcon = "../assets/Snow.png";
     } else if (element.weather[0].main === "Mist") {
-      wetherForecastIcon = "./assets/Fog.png";
+      wetherForecastIcon = "../assets/Fog.png";
     } else if (element.weather[0].main === "Haze") {
-      wetherForecastIcon = "./assets/Haze.png";
+      wetherForecastIcon = "../assets/Haze.png";
     } else if (element.weather[0].main === "Smoke") {
-      wetherForecastIcon = "./assets/smockcloud.png";
+      wetherForecastIcon = "../assets/smockcloud.png";
     }
 
     const eachForecast = document.querySelectorAll(".forecast");
