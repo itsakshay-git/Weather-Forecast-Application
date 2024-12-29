@@ -2,6 +2,9 @@
 
 A simple weather forecast application built using **Tailwind CSS**, **HTML**, and **JavaScript**. The application allows users to search for a city and view current weather conditions, as well as a 5-day weather forecast.
 
+## Github repo
+[Weather Forecast Application](https://github.com/itsakshay-git/Weather-Forecast-Application?tab=readme-ov-file)
+
 ---
 ## Screenshot
 
