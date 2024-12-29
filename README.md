@@ -3,6 +3,14 @@
 A simple weather forecast application built using **Tailwind CSS**, **HTML**, and **JavaScript**. The application allows users to search for a city and view current weather conditions, as well as a 5-day weather forecast.
 
 ---
+## Screenshot
+
+![Screenshot 2024-12-29 221010](https://github.com/user-attachments/assets/906b0256-dafa-41ff-bb8b-fc0b3ec0a07f)
+
+![Screenshot 2024-12-29 220953](https://github.com/user-attachments/assets/493f9ad9-60b4-41ff-9f34-76e5debb2a64)
+
+![Screenshot 2024-12-29 220810](https://github.com/user-attachments/assets/65380c14-3838-411f-bf8c-961b5ba9d206)
+
 
 ## Project Structure
 
