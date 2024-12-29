@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"
+    content="A simple weather forecast application, The application allows users to search for a city and view current weather conditions, as well as a 5-day weather forecast."
+    />
     <link rel="stylesheet" href="./output.css">
     <title>Weather Forecast Application</title>
 </head>
 <body class="bg-custom-dark">
+    <!-- header section contain search input, geolocation button, displays city weather data in organized way -->
     <header class="custom-360-414:h-[70svh] h-[60vh] rounded-br-[40px] rounded-bl-[40px] shadow-2xl flex justify-between items-center bg-gradient-to-bl from-slate-900/80 via-slate-800/70 to-slate-50/10 backdrop-blur-md">
         <article class="portrait:w-[100vw] custom-360-414:pl-5 w-[100vw] sm:w-[100vw] md:w-[40vw] lg:w-[50vw] xl:w-[50vw] h-full  p-5 pl-10 flex flex-col justify-around custom-360-414:justify-between custom-360-414:gap-5 portrait:justify-between portrait:gap-5 portrait:pl-5">
             <section class="search_container portrait:mb-0 block sm:flex mb-16 items-center custom-360-414:mb-0 custom-360-414:h-full custom-360-414:flex custom-360-414:flex-col custom-360-414:justify-between portrait:h-full portrait:flex portrait:flex-col portrait:justify-between">
@@ -21,58 +26,17 @@
 
                 <!-- small device -->
                 <section class="portrait:block text-white block sm:hidden custom-360-414:flex custom-360-414:flex-col custom-360-414:justify-between">
-                    <section class="weather_icon flex justify-center items-center">
-                        <dotlottie-player src="https://lottie.host/960a3800-51f5-456b-b845-b48d53e2bbb6/kxTNUx0w16.lottie" background="transparent" speed="1" style="width: 180px; height: 180px" loop autoplay></dotlottie-player>
-                    </section>
-                    <div class="text-center mt-3 mb-3">
-                        <span class="text-center mt-auto bg-custom-light-gray p-2 rounded-lg text-xs">Clouds</span>
-                    </div>
-                    <div class="flex text-white items-center justify-center self-end mb-3">
-                        <p class="text-4xl">32</p> 
-                        <span class="text-2xl ml-1 mr-10 custom-360-414:mr-5"><sup>°C</sup></span>
-                        <p class="text-4xl">Chandrapur</p>
-                    </div>
-                        <p class="text-gray-400 pl-1 text-center">Monday 20 2024</p>
+                    <section class="weather_i flex justify-center items-center"></section>
+                    <div class="phone"></div>
                 </section>
 
                 <!-- small device -->
-                <section class="portrait:block weather_states text-white flex justify-center items-center sm:hidden">
-                    <div class="flex gap-2 rounded-xl bg-custom-light-gray p-1 justify-center items-center">
-                        <div class="states flex p-2">
-                            <div class="mr-1 mt-1">
-                                <img src="../assets/Temperature.png" height="20" width="20" alt="temperature_icon">
-                            </div>
-                            <div>
-                                <p class="text-[12px]">Temperature</p>
-                                <p class="text-[12px]">31</p>
-                            </div>
-                        </div>
-                            <span class="border border-gray-400 has-[100%]: h-14"></span>
-                        <div class="states flex p-4">
-                            <div class="mr-2 mt-1">
-                                <img src="../assets/Wind.png" height="19" width="19" alt="wind_icon">
-                            </div>
-                            <div>
-                                <p class="text-[12px]">Wind</p>
-                                <p class="text-[12px]">31</p>
-                            </div>
-                        </div>
-                            <span class="border border-gray-400 has-[100%]: h-14"></span>
-                        <div class="states flex p-4">
-                            <div class="mr-2 mt-1">
-                                <img src="../assets/Humidity.png" height="20" width="20" alt="humidity_icon">
-                            </div>
-                            <div>
-                                <p class="text-[12px]">Humidity</p>
-                                <p class="text-[12px]">31</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <section class="phone_weather_states portrait:block weather_states text-white flex justify-center items-center sm:hidden"></section>
 
             </section>
             <section id="container" class="text-white hidden sm:block portrait:hidden"></section>
         </article>
+        <!-- displays current city weather with temperature, wind speed and humidity states -->
         <article class="w-[40vw] h-full xl:w-[50vw] lg:w-[50vw] md:w-[60vw] p-5 flex-col justify-around hidden sm:flex portrait:hidden">
             <section class="icon flex justify-center items-center"></section>
             <section class="text-white flex justify-center items-center">
@@ -80,6 +44,7 @@
             </section>
         </article>
     </header>
+    <!-- displays 5 days forecast dynamically-->
     <section id="five_days_Forecast" class="p-2 m-4 bg-slate-800/40 rounded-lg text-white">
         <p class="ml-4 p-1">5 Days Forecast</p>
         <div class="flex p-2 justify-around overflow-x-scroll 2xl:overflow-hidden xl:overflow-x-scroll lg:overflow-x-scroll md:overflow-x-scroll sm:overflow-x-hidden gap-5 xl:gap-5 lg:gap-5 md:gap-5 sm:gap-5">
