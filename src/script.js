@@ -311,8 +311,8 @@ function weatherRender(weather, forecast) {
   } else if (weather.weather === "Clear" && weather.icon === "01n") {
     const icon = document.querySelector(".icon");
     const weatherIcon = document.querySelector(".weather_i");
-    icon.innerHTML = `<img src="../assets/moonlight.png" style="width: 200px; height: 200px" />`;
-    weatherIcon.innerHTML = `<img src="../assets/moonlight.png" style="width: 170px; height: 170px" />`;
+    icon.innerHTML = `<img src="./assets/moonlight.png" style="width: 200px; height: 200px" />`;
+    weatherIcon.innerHTML = `<img src="./assets/moonlight.png" style="width: 170px; height: 170px" />`;
 
   } else if (weather.weather === "Rain") {
     const icon = document.querySelector(".icon");
@@ -335,8 +335,8 @@ function weatherRender(weather, forecast) {
   } else if (weather.weather === "Mist") {
     const icon = document.querySelector(".icon");
     const weatherIcon = document.querySelector(".weather_i");
-    icon.innerHTML = `<img src="../assets/mist-and-cloud.png" style="width: 220px; height: 220px" />`;
-    weatherIcon.innerHTML = `<img src="../assets/mist-and-cloud.png" style="width: 180px; height: 180px" />`;
+    icon.innerHTML = `<img src="./assets/mist-and-cloud.png" style="width: 220px; height: 220px" />`;
+    weatherIcon.innerHTML = `<img src="./assets/mist-and-cloud.png" style="width: 180px; height: 180px" />`;
 
   } else if (weather.weather === "Haze") {
     const icon = document.querySelector(".icon");
@@ -347,8 +347,8 @@ function weatherRender(weather, forecast) {
   } else if (weather.weather === "Smoke") {
     const icon = document.querySelector(".icon");
     const weatherIcon = document.querySelector(".weather_i");
-    icon.innerHTML = `<img src="../assets/smockcloud.png" style="width: 220px; height: 220px" />`;
-    weatherIcon.innerHTML = `<img src="../assets/smockcloud.png" style="width: 180px; height: 180px" />`;
+    icon.innerHTML = `<img src="./assets/smockcloud.png" style="width: 220px; height: 220px" />`;
+    weatherIcon.innerHTML = `<img src="./assets/smockcloud.png" style="width: 180px; height: 180px" />`;
   }
 
   phoneScreen.innerHTML =`
@@ -366,7 +366,7 @@ function weatherRender(weather, forecast) {
   phoneWeather.innerHTML = `<div class="flex gap-2 rounded-xl bg-custom-light-gray p-1 justify-center items-center">
   <div class="states flex p-2">
       <div class="mr-1 mt-1">
-          <img src="../assets/Temperature.png" height="20" width="20" alt="temperature_icon">
+          <img src="./assets/Temperature.png" height="20" width="20" alt="temperature_icon">
       </div>
       <div>
           <p class="text-[12px]">Temperature</p>
@@ -376,7 +376,7 @@ function weatherRender(weather, forecast) {
       <span class="border border-gray-400 has-[100%]: h-14"></span>
   <div class="states flex p-4">
       <div class="mr-2 mt-1">
-          <img src="../assets/Wind.png" height="19" width="19" alt="wind_icon">
+          <img src="./assets/Wind.png" height="19" width="19" alt="wind_icon">
       </div>
       <div>
           <p class="text-[12px]">Wind</p>
@@ -386,7 +386,7 @@ function weatherRender(weather, forecast) {
       <span class="border border-gray-400 has-[100%]: h-14"></span>
   <div class="states flex p-4">
       <div class="mr-2 mt-1">
-          <img src="../assets/Humidity.png" height="20" width="20" alt="humidity_icon">
+          <img src="./assets/Humidity.png" height="20" width="20" alt="humidity_icon">
       </div>
       <div>
           <p class="text-[12px]">Humidity</p>
@@ -411,7 +411,7 @@ function weatherRender(weather, forecast) {
   weatherState.innerHTML = `
   <div class="states flex p-4">
       <div class="mr-2 mt-1">
-          <img src="../assets/Temperature.png" height="20" width="20" alt="temperature_icon">
+          <img src="./assets/Temperature.png" height="20" width="20" alt="temperature_icon">
       </div>
       <div>
           <p>Temperature</p>
@@ -421,7 +421,7 @@ function weatherRender(weather, forecast) {
       <span class="border border-gray-400 has-[100%]: h-14"></span>
   <div class="states flex p-4">
       <div class="mr-2 mt-1">
-          <img src="../assets/Wind.png" height="19" width="19" alt="wind_icon">
+          <img src="./assets/Wind.png" height="19" width="19" alt="wind_icon">
       </div>
       <div>
           <p>Wind</p>
@@ -431,7 +431,7 @@ function weatherRender(weather, forecast) {
       <span class="border border-gray-400 has-[100%]: h-14"></span>
   <div class="states flex p-4">
       <div class="mr-2 mt-1">
-          <img src="../assets/Humidity.png" height="20" width="20" alt="humidity_icon">
+          <img src="./assets/Humidity.png" height="20" width="20" alt="humidity_icon">
       </div>
       <div>
           <p>Humidity</p>
@@ -448,21 +448,21 @@ function weatherRender(weather, forecast) {
     let wetherForecastIcon;
 
     if (element.weather[0].main === "Clouds") {
-      wetherForecastIcon = "../assets/Cloud.png";
+      wetherForecastIcon = "./assets/Cloud.png";
     } else if (element.weather[0].main === "Clear") {
-      wetherForecastIcon = "../assets/Sun.png";
+      wetherForecastIcon = "./assets/Sun.png";
     } else if (element.weather[0].main === "Rain") {
-      wetherForecastIcon = "../assets/Light Rain.png";
+      wetherForecastIcon = "./assets/Light Rain.png";
     } else if (element.weather[0].main === "Fog") {
-      wetherForecastIcon = "../assets/Fog1.png";
+      wetherForecastIcon = "./assets/Fog1.png";
     } else if (element.weather[0].main === "Snow") {
-      wetherForecastIcon = "../assets/Snow.png";
+      wetherForecastIcon = "./assets/Snow.png";
     } else if (element.weather[0].main === "Mist") {
-      wetherForecastIcon = "../assets/Fog.png";
+      wetherForecastIcon = "./assets/Fog.png";
     } else if (element.weather[0].main === "Haze") {
-      wetherForecastIcon = "../assets/Haze.png";
+      wetherForecastIcon = "./assets/Haze.png";
     } else if (element.weather[0].main === "Smoke") {
-      wetherForecastIcon = "../assets/smockcloud.png";
+      wetherForecastIcon = "./assets/smockcloud.png";
     }
 
     const eachForecast = document.querySelectorAll(".forecast");
@@ -473,17 +473,17 @@ function weatherRender(weather, forecast) {
       </div>
       <div class="flex gap-8">
           <div class="flex flex-col justify-center items-center gap-2">                   
-              <img src="../assets/Temperature.png" height="20" width="20" alt="temperature_icon">
+              <img src="./assets/Temperature.png" height="20" width="20" alt="temperature_icon">
               <p class="text-[12px]">${element.main.temp}</p>
           </div>
               <span class="border border-gray-600 has-[100%]: h-14"></span>
           <div class="flex flex-col justify-center items-center gap-2">                   
-              <img src="../assets/Wind.png" height="20" width="20" alt="wind_icon">
+              <img src="./assets/Wind.png" height="20" width="20" alt="wind_icon">
               <p class="text-[12px]">${element.wind.speed}ms</p>
           </div>
               <span class="border border-gray-600 has-[100%]: h-14"></span>
           <div class="flex flex-col justify-center items-center gap-2">                   
-              <img src="../assets/Humidity.png" height="20" width="20" alt="humidity_icon">
+              <img src="./assets/Humidity.png" height="20" width="20" alt="humidity_icon">
               <p class="text-[12px]">${element.main.humidity}</p>
           </div>
       </div>
