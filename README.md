@@ -43,7 +43,7 @@ weather-forecast-app/
 ## Installation
 
 1. Clone the repository:
-   git clone https://github.com/your-username/weather-forecast-app.git
+   git clone https://github.com/itsakshay-git/Weather-Forecast-Application.git
    cd weather-forecast-app
 
 2. Install the necessary dependencies:
