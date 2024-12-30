@@ -29,7 +29,7 @@ searchInput.addEventListener("keydown", async function (event) {
       if (cityName.length) {
         weatherInitializer(cityName, false);
       } else {
-        showToast("enter valid city name.", "error");
+        showToast("enter valid city name, invalid location", "error");
       }
     } catch (error) {
       showToast(error.message, "error");
@@ -225,7 +225,6 @@ async function weatherInitializer(city, geolocation) {
   4. Returns an object containing the filtered weather data and the filtered forecast data.
 */
 function filterData(weatherData, forecastData) {
-  console.log(weatherData)
   // weather filter
   const filteredWeatherData = {
     name: weatherData.name,
